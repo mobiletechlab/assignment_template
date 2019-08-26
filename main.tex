@@ -1,0 +1,111 @@
+% Do not modify these
+\documentclass[fleqn,10pt]{wlscirep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+% -- Insert any custom LaTeX packages here --
+
+% -- End of custom LaTeX packages --
+
+
+% Fill in your title
+\title{Assignment Title}
+
+% Fill in author information
+\author[1]{First Author}
+\author[2]{Second Author}
+\author[1,2]{Third Author}
+\affil[1]{Master of Applied Computer Science, Department of Technology, Kristiania University College}
+\affil[2]{Master of Human-Computer Interaction, Department of Technology, Kristiania University College}
+
+% Fill in assignment abstract
+\begin{abstract}
+Lorem ipsum dolor sit amet, malorum numquam eum ei. Fierent argumentum persequeris ei vis, an cum adhuc consul mnesarchum. Id mel vidisse platonem intellegebat, ocurreret temporibus nam ei. No cum rebum iisque, ne aeterno deserunt electram eos. Te option euripidis intellegam eam, vix ad tempor labore discere.
+\end{abstract}
+
+
+% Do not modify the following two lines
+\begin{document}
+\include{cover}
+
+
+% Insert data for the hand-in's cover page
+\makecoverpage{
+	master_of 		 = \par{Fill in},  % Use either: Applied Computer Science | Human-Computer Interaction
+	assignment_title = \par{Fill in},  % Title of your assignment
+	course_code    	 = \par{Fill in},  % Course code (ex. MA110)
+	course_name      = \par{Fill in},  % Course name (ex. Systems Development)
+	due_date		 = \par{Fill in},  % Due date
+	student_name     = \par{Fill in},  % Your name (or names, if group – separate names with ; semicolon)
+	student_number   = \par{Fill in},  % Your student ID number (or numbers, if group – separate ID numbers with ; semicolon)
+	group_size		 = 1, % Number of group members (used for the declaration text)
+}
+
+
+% Do not modify the following two lines
+\flushbottom
+\maketitle
+
+
+% --INTRODUCTION--
+\section{Introduction}
+Insert your introduction here.
+
+% --RELATED WORK--
+\section{Related Work}
+Present related work here. 
+You should read \cite{Webster2002-pw} on presenting a literature review.
+Both journal papers and conference papers, such as \cite{Dingsoyr2014-xt}, are great sources.
+
+\subsection{A subsection}
+This is an example of a sub-section.
+
+% --RESEARCH METHOD--
+\section{Research Method}
+Present your research method and/or design here. 
+In \cite{Hevner2010-yw}, the authors discuss design science research.
+
+% --FINDINGS/RESULTS--
+\section{Findings/Results}
+Present your findings/results! 
+It may be in the form of a table, such as in the case of Table \ref{tab:example}.
+Upload data to Github \cite{Github_undated-kr}.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Condition} & \textbf{n} & \textbf{p} \\
+\hline
+A & 5 & 0.1 \\
+A & 5 & 0.1 \\
+\hline
+\end{tabular}
+\caption{Table caption}
+\end{table}
+
+% --DISCUSSION--
+\section{Discussion}
+A discussion of your findings, results and previous research goes here, perhaps with a reference to Figure \ref{fig:figure_label}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{images/sample_image.png}
+\caption{Image caption}
+\label{fig:figure_label}
+\end{figure}
+
+% --CONCLUSION--
+\section{Conclusion}
+Briefly conclude your study, and present thoughts on implications and further work.
+
+\begin{itemize}
+	\item One idea on further work;
+	\item A second idea as well;
+\end{itemize}
+
+% Do not modify the following two lines
+\bibliography{references}
+\end{document}
