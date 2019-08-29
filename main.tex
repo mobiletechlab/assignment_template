@@ -7,18 +7,21 @@
 
 % -- Insert any custom LaTeX packages here --
 
+% \package{natbib} % <-- Required for the Chicago citation style
+% \package{apacite} % <-- Required for the APA citation style
+% If you decide to use one of the styles above, remember to change the \bibliographystyle{} at the bottom of the document too!
+
+\usepackage{listings} % <-- Required if you want to display program source code in your paper.
+
+
 % -- End of custom LaTeX packages --
 
 
 % Fill in your title
 \title{Assignment Title}
 
-% Fill in author information
-\author[1]{First Author}
-\author[2]{Second Author}
-\author[1,2]{Third Author}
-\affil[1]{Master of Applied Computer Science, Department of Technology, Kristiania University College}
-\affil[2]{Master of Human-Computer Interaction, Department of Technology, Kristiania University College}
+% Do not modify the author tag below, just let it be blank
+\author{}
 
 % Fill in assignment abstract
 \begin{abstract}
@@ -67,6 +70,25 @@ This is an example of a sub-section.
 Present your research method and/or design here. 
 In \cite{Hevner2010-yw}, the authors discuss design science research.
 
+Sometimes, you need to use code to illustrate your technical implementations.
+Using \texttt{lstlisting} can help you with that:
+
+\begin{lstlisting}[caption=Displaying Hello World in JavaScript]
+console.log("Hello World!");
+\end{lstlisting}
+
+
+You might also want to display a formula, equation, stats, or other types of information requiring a math "mode" in \LaTeX.
+
+% In-line using dollar signs
+$E=mc^2$
+
+% A free-standing formula with caption
+\begin{figure}[h]
+\[ E = m c^2 \]
+\caption{Mass-energy equivalence}
+\end{figure}
+
 % --FINDINGS/RESULTS--
 \section{Findings/Results}
 Present your findings/results! 
@@ -106,6 +128,9 @@ Briefly conclude your study, and present thoughts on implications and further wo
 	\item A second idea as well;
 \end{itemize}
 
-% Do not modify the following two lines
-\bibliography{references}
+% --REFERENCES--
+\bibliography{references} % <-- This line will generate the bibliography list automatically
+\bibliographystyle{IEEEtran} % <-- Change this line if you want to use a different citation style
+
+% Do not modify this last lines
 \end{document}

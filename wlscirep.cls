@@ -64,7 +64,7 @@
 %\RequirePackage[authoryear]{natbib}
 \RequirePackage[biblabel,nomove]{cite}
 %% Nov 3, 2016: Support DOI
-\bibliographystyle{naturemag-doi}
+%\bibliographystyle{naturemag-doi}
 %\bibliographystyle{plainnat}
 %\bibliographystyle{abbrvnat}             
 %
